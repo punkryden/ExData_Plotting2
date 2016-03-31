@@ -9,10 +9,9 @@
 ###################################################################
 
 #
-# Load colorRamps and ggplot2 library
+# Load ggplot2 library
 #
 
-require(colorRamps)
 require(ggplot2)
 
 #
