@@ -25,7 +25,7 @@ SCC <- readRDS("Source_Classification_Code.rds")
 # Subset the Baltimore City, Maryland data
 NEI_sub <- subset(NEI[NEI$fips=="24510",])
 
-# Filter on coal combustion-related
+# Filter on motor vehicle sources
 vehicl <- grepl("vehicle", SCC$SCC.Level.Two, ignore.case=TRUE)
 SCC_sub <- SCC[vehicl,]
 NEI_sub2 <- NEI_sub[NEI_sub$SCC %in% SCC_sub$SCC,]
